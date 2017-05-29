@@ -1,0 +1,842 @@
+--- !ruby/object:ActiveRecord::ConnectionAdapters::SchemaCache
+columns:
+  schema_migrations:
+  - &33 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: version
+    table_name: schema_migrations
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &1 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *1
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  ar_internal_metadata:
+  - &34 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: key
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &2 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *2
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &35 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: value
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &3 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *3
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &36 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: created_at
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &4 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *4
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &37 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: updated_at
+    table_name: ar_internal_metadata
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &5 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *5
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  categories:
+  - &38 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: id
+    table_name: categories
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &6 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *6
+    'null': false
+    default: 
+    default_function: nextval('categories_id_seq'::regclass)
+    collation: 
+    comment: 
+  - &39 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: name
+    table_name: categories
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &7 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *7
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &40 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: created_at
+    table_name: categories
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &8 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *8
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &41 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: updated_at
+    table_name: categories
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &9 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *9
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  categories_products:
+  - &42 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: category_id
+    table_name: categories_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &10 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *10
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &43 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: product_id
+    table_name: categories_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &11 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *11
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  orders:
+  - &44 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: id
+    table_name: orders
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &12 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *12
+    'null': false
+    default: 
+    default_function: nextval('orders_id_seq'::regclass)
+    collation: 
+    comment: 
+  - &45 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: status
+    table_name: orders
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &13 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *13
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &46 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: customer_id
+    table_name: orders
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &14 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *14
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &47 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: created_at
+    table_name: orders
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &15 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *15
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &48 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: updated_at
+    table_name: orders
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &16 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *16
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  customers:
+  - &49 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: id
+    table_name: customers
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &17 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *17
+    'null': false
+    default: 
+    default_function: nextval('customers_id_seq'::regclass)
+    collation: 
+    comment: 
+  - &50 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: name
+    table_name: customers
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &18 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *18
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &51 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: created_at
+    table_name: customers
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &19 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *19
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &52 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: updated_at
+    table_name: customers
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &20 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *20
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  products:
+  - &53 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: id
+    table_name: products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &21 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *21
+    'null': false
+    default: 
+    default_function: nextval('products_id_seq'::regclass)
+    collation: 
+    comment: 
+  - &54 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: name
+    table_name: products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &22 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: character varying
+          type: :string
+          limit: 
+          precision: 
+          scale: 
+        - 1043
+        - -1
+        - false
+      : *22
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &55 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: price
+    table_name: products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &23 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: numeric(12,3)
+          type: :decimal
+          limit: 
+          precision: 12
+          scale: 3
+        - 1700
+        - 786439
+        - false
+      : *23
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &56 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: created_at
+    table_name: products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &24 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *24
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &57 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: updated_at
+    table_name: products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &25 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *25
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  orders_products:
+  - &58 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: order_id
+    table_name: orders_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &26 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *26
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &59 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: product_id
+    table_name: orders_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &27 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *27
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  order_products:
+  - &60 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: id
+    table_name: order_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &28 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *28
+    'null': false
+    default: 
+    default_function: nextval('order_products_id_seq'::regclass)
+    collation: 
+    comment: 
+  - &61 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: order_id
+    table_name: order_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &29 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *29
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &62 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: product_id
+    table_name: order_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &30 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: bigint
+          type: :integer
+          limit: 8
+          precision: 
+          scale: 
+        - 20
+        - -1
+        - false
+      : *30
+    'null': true
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &63 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: created_at
+    table_name: order_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &31 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *31
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+  - &64 !ruby/object:ActiveRecord::ConnectionAdapters::PostgreSQLColumn
+    name: updated_at
+    table_name: order_products
+    sql_type_metadata: !ruby/marshalable:ActiveRecord::ConnectionAdapters::PostgreSQLTypeMetadata
+      :__v2__:
+      - :@type_metadata
+      - :@oid
+      - :@fmod
+      - :@array
+      ? - &32 !ruby/object:ActiveRecord::ConnectionAdapters::SqlTypeMetadata
+          sql_type: timestamp without time zone
+          type: :datetime
+          limit: 
+          precision: 
+          scale: 
+        - 1114
+        - -1
+        - false
+      : *32
+    'null': false
+    default: 
+    default_function: 
+    collation: 
+    comment: 
+columns_hash:
+  schema_migrations:
+    version: *33
+  ar_internal_metadata:
+    key: *34
+    value: *35
+    created_at: *36
+    updated_at: *37
+  categories:
+    id: *38
+    name: *39
+    created_at: *40
+    updated_at: *41
+  categories_products:
+    category_id: *42
+    product_id: *43
+  orders:
+    id: *44
+    status: *45
+    customer_id: *46
+    created_at: *47
+    updated_at: *48
+  customers:
+    id: *49
+    name: *50
+    created_at: *51
+    updated_at: *52
+  products:
+    id: *53
+    name: *54
+    price: *55
+    created_at: *56
+    updated_at: *57
+  orders_products:
+    order_id: *58
+    product_id: *59
+  order_products:
+    id: *60
+    order_id: *61
+    product_id: *62
+    created_at: *63
+    updated_at: *64
+primary_keys:
+  schema_migrations: version
+  ar_internal_metadata: key
+  categories: id
+  categories_products: 
+  orders: id
+  customers: id
+  products: id
+  orders_products: 
+  order_products: id
+data_sources:
+  schema_migrations: true
+  ar_internal_metadata: true
+  categories: true
+  categories_products: true
+  orders: true
+  customers: true
+  products: true
+  orders_products: true
+  order_products: true
+version: 20170527002721
