@@ -4,11 +4,11 @@ Rails.application.routes.draw do
   get '/', to: 'products#index'
   get '/customers/:customer_id/category_count/:category_id', to: 'customers#get_customer_category_count'
   get '/products/sold_by_date/:start_date/:end_date/:range', to: 'products#get_products_sold_breakdown'
-  get 'customers/:customer_id/orders', to: 'customers#get_customer_orders'
+  get '/customers/:customer_id/orders', to: 'customers#get_customer_orders'
 
   resources :orders
   resources :products
-  
+
   resources :categories do
     resources :products
   end
